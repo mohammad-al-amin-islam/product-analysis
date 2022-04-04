@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ReviewItem = ({ item }) => {
-    const { id, name, img, givenReview, review } = item;
+    const { name, img, givenReview, review } = item;
     return (
         <div className='w-3/4 m-7 mx-auto rounded h-full bg-slate-100 p-3 shadow-md'>
             <div className='flex items-center'>
@@ -13,8 +13,7 @@ const ReviewItem = ({ item }) => {
                     <p className='font-bold'>Given Ratings: {review}</p>
                 </div>
             </div>
-            <p className='text-left'>{givenReview}</p>
-
+            <p className='text-left mt-1'>{givenReview}</p>
         </div>
     );
 };
