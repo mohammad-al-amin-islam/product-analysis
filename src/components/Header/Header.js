@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className='flex justify-between items-center shadow font-bold text-3xl '>
-            <div className='ml-5 uppercase'>
+        <div className='md:flex justify-between items-center shadow font-bold text-3xl '>
+            <div className='hidden md:block ml-5 uppercase'>
                 <Link to='/'>Love Readings</Link>
             </div>
 
-            <nav className='flex justify-between p-8 uppercase'>
+            <nav className='md:flex justify-between p-8 uppercase'>
 
                 <CustomLink className='mr-6 text-lg font-bold' to='/home'>Home</CustomLink>
                 <CustomLink className='mr-6 text-lg font-bold' to='/reviews'>Reviews</CustomLink>
